@@ -1,0 +1,70 @@
+<div class="calculadora-container">
+  <div class="wrapper-input">
+    <input 
+      class="input" 
+      type="text" 
+      id="display"
+      name="display"
+      readonly="only"
+      [value]="display"
+    >
+  </div>
+
+  <div id="btnAc" class="wrapper-buttons">
+    <button class="buttons light-gray" (click)="limpar()">AC</button>
+  </div>
+  <div id="btnMaisMenos" class="wrapper-buttons">
+    <button class="buttons light-gray">+/-</button>
+  </div>
+  <div id="btnPorcentagem" class="wrapper-buttons">
+    <button class="buttons light-gray" (click)="definirOperacao('%')"> % </button>
+  </div>
+  <div id="btnDivisao" class="wrapper-buttons">
+    <button class="buttons gold" (click)="definirOperacao('/')">/</button>
+  </div>
+  <div id="btn7" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('7')">7</button>
+  </div>
+  <div id="btn8" class="wrapper-buttons">
+    <button class="buttons grey"(click)="adicionarNumero('8')">8</button>
+  </div>
+  <div id="btn9" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('9')">9</button>
+  </div>
+  <div id="btnMultiplicacao" class="wrapper-buttons">
+    <button class="buttons gold" (click)="definirOperacao('*')">X</button>
+  </div>
+  <div id="btn4" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('4')">4</button>
+  </div>
+  <div id="btn5" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('5')">5</button>
+  </div>
+  <div id="btn6" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('6')">6</button>
+  </div>
+  <div id="btnMenos" class="wrapper-buttons">
+    <button class="buttons gold" (click)="definirOperacao('-')">-</button>
+  </div>
+  <div id="btn1" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('1')">1</button>
+  </div>
+  <div id="btn2" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('2')">2</button>
+  </div>
+  <div id="btn3" class="wrapper-buttons">
+    <button class="buttons grey" (click)="adicionarNumero('3')">3</button>
+  </div>
+  <div id="btnMais" class="wrapper-buttons">
+    <button id="buttonSomar" class="buttons gold" (click)="definirOperacao('+')">+</button>
+  </div>
+  <div id="btn0" class="wrapper-buttons">
+    <button class="button0 grey" (click)="adicionarNumero('0')">0</button>
+  </div>
+  <div id="btnVirgula" class="wrapper-buttons">
+    <button class="buttons grey"(click)="adicionarNumero(',')">,</button>
+  </div>
+  <div id="btnIgual" class="wrapper-buttons">
+    <button class="buttons gold" (click)="calcular()"> = </button>
+  </div> 
+</div>
